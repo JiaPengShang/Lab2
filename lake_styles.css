@@ -1,0 +1,103 @@
+﻿@charset "utf-8";
+
+@font-face {
+   font-family: cac_champagne;
+   src: url("cac_champagne.woff");
+}
+
+.title {
+   font-family: 'cac_champagne';
+}
+
+@font-face {
+   font-family: DobkinPlain;
+   src: url("DobkinPlain.woff");
+}
+
+.box {
+   font-family: 'DobkinPlain';
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: 
+   Date:   
+   
+   Filename: lake_styles.css
+*/
+
+/*The color of the backgroud*/
+body {
+   background-color: rgba(191, 223, 15, 0.699);
+   color: white;
+}
+
+header>nav>ul {
+   background-color: rgb(255, 192, 255);
+}
+
+section#leftcol {
+   background-color: black;
+}
+
+section#rightcol {
+   background-color: rgb(156, 27, 156);
+}
+
+section#leftcol>aside#notes {
+
+   background-color: pink;
+
+}
+
+section#leftcol>aside#events {
+
+   background-color: rgb(226, 189, 25);
+
+}
+
+footer {
+   background-color: rgba(0, 0, 0, 0.568);
+}
+
+/*The color of the text*/
+section#rightcol>nav>ul>li>a {
+   color: white
+}
+
+section#rightcol>blockquote {
+   color: rgba(255, 173, 255, 0.562)
+}
+
+/*The size of the text*/
+section#leftcol>h1 {
+   font-size: 60px;
+}
+
+section#leftcol>aside>h1 {
+   font-size: 25px;
+}
+
+section#leftcol>aside>h2 {
+   font-size: 20px;
+}
+
+section#leftcol>aside>ul {
+   font-size: 15px;
+}
+
+section#leftcol>aside>p {
+   font-size: 15px;
+}
+
+section#rightcol>nav>h2 {
+   font-size: 40px;
+}
+
+section#rightcol>blockquote {
+   font-size: 30px;
+}

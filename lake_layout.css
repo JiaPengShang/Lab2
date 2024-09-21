@@ -1,0 +1,151 @@
+﻿/* Structural Styles */
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+	display: grid;
+	grid-template-columns: 70% 30%;
+	/* 70% width for left column and 30% for right column */
+	grid-template-rows: auto 1200px auto;
+	/* Header, content, and footer heights */
+}
+
+body>header>img {
+	width: 1020px;
+	height: auto;
+	display: block;
+	margin: 0;
+	grid-column: 1 / -1;
+	/* Spanning full width across all columns */
+}
+
+/* Define grid areas for each section */
+body>section#leftcol {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+body>section#rightcol {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+footer {
+	clear: none;
+	/* Clear float no longer needed thanks to grid */
+	grid-column: 1 / -1;
+	/* Spanning full width across all columns */
+	text-align: center;
+}
+
+/* Preserve box-sizing throughout the document */
+address,
+article,
+aside,
+blockquote,
+body,
+cite,
+div,
+dl,
+dt,
+dd,
+em,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+li,
+main,
+nav,
+ol,
+p,
+section,
+span,
+ul {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Header Navigation - adapting to Flexbox for better responsiveness */
+header>nav {
+	display: flex;
+	width: 1020px;
+}
+
+header>nav>ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+header>nav>ul>li {
+	flex: 1;
+	text-align: center;
+	padding: 10px;
+}
+
+header>nav a {
+	display: block;
+	width: 100%;
+}
+
+/* Section Layout Updates */
+section#leftcol>p {
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+section#leftcol>aside#notes {
+	width: 42%;
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 10px;
+}
+
+section#leftcol>aside#events {
+	width: 42%;
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 10px;
+}
+
+section>aside>h1 {
+	text-align: center;
+}
+
+section#leftcol>aside#events>h2,
+p {
+	padding-left: 5%;
+}
+
+section#leftcol>img {
+	width: 100%;
+	display: block;
+}
+
+section#rightcol>nav {
+	margin-left: 10%;
+}
+
+section#rightcol>blockquote {
+	margin-left: 10%;
+	margin-top: 30%;
+}
+
+section#rightcol>nav>ul {
+	list-style-type: none;
+}
